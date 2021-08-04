@@ -1,5 +1,4 @@
 ## Finding Lane Lines
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 
 [//]: # (Image References)
@@ -14,7 +13,7 @@
 
 Overview
 ---
-In this project, I will use the tools about computer version to identify lane lines on the road. I will develop a pipeline on a series of individual images, and later apply the result to a video stream (really just a series of images).
+In this project, I will use the tools about computer vision to identify lane lines on the road. I will develop a pipeline on a series of individual images, and later apply the result to a video stream (really just a series of images).
 
 
 The project
