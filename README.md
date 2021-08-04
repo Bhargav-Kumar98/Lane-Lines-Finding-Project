@@ -24,12 +24,6 @@ The goals / steps of this project are the following:
 * Reflect on my work
 
 
-### Dependencies
-This lab requires docker images:
-
-* [CarND Term1 Starter Kit](https://github.com/udacity/CarND-Term1-Starter-Kit)
-
-
 Ideas for Lane Detection Pipeline
 ---
 Some OpenCV functions I have used for this project are:
@@ -75,7 +69,7 @@ We can test our solution on two provided videos:
 
 `solidYellowLeft.mp4`  
 
-The result is in [test_videos_output](https://github.com/liferlisiqi/Finding-Lane-Lines/tree/master/test_videos_output): white.mp4 and yelloe.mp4.
+The result is in [test_videos_output](https://github.com/Bhargav-Kumar98/Lane-Lines-Finding-Project/tree/main/test_videos_output): white.mp4 and yelloe.mp4.
 
 
 Improved lane finding pipeline
@@ -85,24 +79,4 @@ At this point, I have the Hough line segments drawn onto the road, but what abou
 The first step is to diveded the detected lines into left set and right set.
 Then in each line set, several special lines are choosen as basic to draw full line. 
 
-The result is in [test_videos_output](https://github.com/liferlisiqi/Finding-Lane-Lines/tree/master/test_videos_output): white_improved.mp4 and yellow_improved.mp4.
-
-
-Reflection
----
-### 1. Identify potential shortcomings with your current pipeline
-
-
-One potential shortcoming would be my pipeline can't find lane lines exactly when there are too much sonshine or cross of light. Cause in grayscale model of the image, too many useless edges will be find as edges of lane lines by canny detection. Therefore, the real lane lines can't be divided from the noise edges by hough transform, which cause serious result.
-
-Another shortcoming could be there are too many paraments have to be turn, maybe i can find a set of paraments fit one kind of environment, like straight lane lines under sunny day(the easiest case). However, no one can find all the paraments for all situations, or even all kinds of cases can't be enumerated.
-
-And my pipeline cost too much time, which can not adapt to the real car running fast. 
-
-
-### 2. Suggest possible improvements to your pipeline
-
-A possible improvement would be to find a more efficient and robust way to detect lane lines. Color space can be used to study how to find white and yellow more efficiently, and the way to fit lane lines can be update by polynomial.
-
-Another potential improvement could be to use parallel algorithm to accelerate my pipeline, we all know Nvidia do good work at this space, thus use their technology is a better way.
-
+The result is in [test_videos_output](https://github.com/Bhargav-Kumar98/Lane-Lines-Finding-Project/tree/main/test_videos_output): white_improved.mp4 and yellow_improved.mp4.
